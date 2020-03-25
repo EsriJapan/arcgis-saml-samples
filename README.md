@@ -11,7 +11,7 @@ ArcGIS Online/ArcGIS Enterprise は、下記の SAML 対応の ID プロバイ�
   - Shibboleth 3.2x および 3.3x は SAML 2.0 に準拠しているので、Idp として ArcGIS Online/ArcGIS Enterprise で使用することができます。
   - Shibboleth を用いた Idp として ArcGIS Online/ArcGIS Enterprise を利用する手順については ArcGIS Online と Shibboleth の連携ガイドをご参照ください。
   
-  ## ライセンス
+## ライセンス
 Copyright 2020 Esri Japan Corporation.
 
 Apache License Version 2.0（「本ライセンス」）に基づいてライセンスされます。あなたがこのファイルを使用するためには、本ライセンスに従わなければなりません。
