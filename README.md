@@ -2,15 +2,12 @@
 
 ArcGIS Online/ArcGIS Enterprise は、エンタープライズ ログインのアカウント構成に SAML (Security Assertion Markup Language) 2.0 をサポートしています。SAML は、認証サーバーである ID プロバイダーとサービスを提供するアプリケーションであるサービス プロバイダーとの間で認証/認可データを安全に交換するためのオープン規格です。
 
-ArcGIS Online/ArcGIS Enterprise は SAML 2.0 に準拠しており、この規格に準拠する ID プロバイダー (Idp) と統合することができます。SAML の設定をすることで、ID プロバイダー (Idp) として ArcGIS Online/ArcGIS Enterprise を使用できます。SAML 設定に必要な各ファイルを公開しています。
-
-### SAML ID プロバイダー
-ArcGIS Online/ArcGIS Enterprise は、下記の SAML 対応の ID プロバイダー (Idp) をサポートしています。
+ArcGIS Online/ArcGIS Enterprise は SAML 2.0 に準拠しており、この規格に準拠する ID プロバイダー (Idp) と統合することができます。
 
 - Shibboleth
   - Shibboleth 3.2x および 3.3x は SAML 2.0 に準拠しているので、Idp として ArcGIS Online/ArcGIS Enterprise で使用することができます。
-  - Shibboleth を用いた Idp として ArcGIS Online/ArcGIS Enterprise を利用する手順については「ArcGIS Online と Shibboleth の連携ガイド」をご参照ください。
-  
+  - [Shibboleth](https://github.com/EsriJapan/arcgis-saml-samples/tree/master/Shibboleth) には、連携に利用する SAML の各設定ファイルを公開しています。ArcGIS Online/ArcGIS Enterprise と Shibboleth の連携手順については、「ArcGIS Online と Shibboleth の連携ガイド」をご参照ください。
+
 ## ライセンス
 Copyright 2020 Esri Japan Corporation.
 
