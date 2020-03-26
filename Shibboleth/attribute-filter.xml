@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    GakuNin/ConfigTemplate/attribute-filter-template-testfed.xml
+    version 3.3.0
+    
+    This file is a template provided by GakuNin.
+    Based on conf/attribute-filter.xml
+    in Shibboleth IdP 3.3.3 distribution.
+-->
+<!-- 
+    This file is an EXAMPLE policy file.  While the policy presented in this 
+    example file is illustrative of some simple cases, it relies on the names of
+    non-existent example services and the example attributes demonstrated in the
+    default attribute-resolver.xml file.
+    
+    Deployers should refer to the documentation for a complete list of components
+    and their options.
+-->
+<AttributeFilterPolicyGroup id="ShibbolethFilterPolicyForGakuNinTestFed"
+        xmlns="urn:mace:shibboleth:2.0:afp"
+        xmlns:afp="urn:mace:shibboleth:2.0:afp"
+        xmlns:basic="urn:mace:shibboleth:2.0:afp:mf:basic"
+        xmlns:saml="urn:mace:shibboleth:2.0:afp:mf:saml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:mace:shibboleth:2.0:afp http://shibboleth.net/schema/idp/shibboleth-afp.xsd
+                            urn:mace:shibboleth:2.0:afp:mf:basic http://shibboleth.net/schema/idp/shibboleth-afp-mf-basic.xsd
+                            urn:mace:shibboleth:2.0:afp:mf:saml http://shibboleth.net/schema/idp/shibboleth-afp-mf-saml.xsd">
+
+    <!-- Policy for test-sp1 -->
+    <!-- -->
+    <AttributeFilterPolicy id="PolicyforGakuNinTestSP1">
+        <PolicyRequirementRule xsi:type="Requester" value="https://test-sp1.gakunin.nii.ac.jp/shibboleth-sp" />
+
+        <AttributeRule attributeID="organizationName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaOrganizationName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="organizationalUnitName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaOrganizationalUnitName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonPrincipalName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonTargetedID">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonAffiliation">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonScopedAffiliation">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonEntitlement">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="surname">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaSurname">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="givenName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaGivenName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="displayName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaDisplayName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="mail">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="gakuninScopedPersonalUniqueCode">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="isMemberOf">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonAssurance">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonUniqueId">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonOrcid">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+    </AttributeFilterPolicy>
+    <!-- -->
+
+    <!-- Policy for test-sp2 -->
+    <!-- -->
+    <AttributeFilterPolicy id="PolicyforGakuNinTestSP2">
+        <PolicyRequirementRule xsi:type="Requester" value="https://test-sp2.gakunin.nii.ac.jp/shibboleth-sp" />
+
+        <AttributeRule attributeID="organizationName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaOrganizationName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="organizationalUnitName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaOrganizationalUnitName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonPrincipalName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonTargetedID">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonAffiliation">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonScopedAffiliation">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonEntitlement">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="surname">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaSurname">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="givenName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaGivenName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="displayName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="jaDisplayName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="mail">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="gakuninScopedPersonalUniqueCode">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="isMemberOf">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonAssurance">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonUniqueId">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonOrcid">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+    </AttributeFilterPolicy>
+    <!-- -->
+
+    <!-- Policy for test-sp3 -->
+    <!-- -->
+    <AttributeFilterPolicy id="PolicyforGakuNinTestSP3">
+        <PolicyRequirementRule xsi:type="Requester" value="https://test-sp3.gakunin.nii.ac.jp/shibboleth-sp" />
+
+        <AttributeRule attributeID="organizationName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="organizationalUnitName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonPrincipalName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonTargetedID">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonAffiliation">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonScopedAffiliation">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonEntitlement">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="surname">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="givenName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="displayName">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="mail">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
+        <AttributeRule attributeID="eduPersonOrcid">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+    </AttributeFilterPolicy>
+    <!-- -->
+<AttributeFilterPolicy id="ArcGIS">
+        <PolicyRequirementRule xsi:type="Requester" value="nk226.maps.arcgis.com" />
+			<AttributeRule attributeID="uid">
+				<PermitValueRule xsi:type="ANY" />
+			</AttributeRule>
+			<AttributeRule attributeID="givenName">
+				<PermitValueRule xsi:type="ANY" />
+			</AttributeRule>
+			<AttributeRule attributeID="mail">
+				<PermitValueRule xsi:type="ANY" />
+			</AttributeRule>
+		</AttributeFilterPolicy>
+
+</AttributeFilterPolicyGroup>
