@@ -134,14 +134,14 @@
     </DataConnector>
 -->
 <!--
-<DataConnector id="staticAttributes" xsi:type="Static">
+    <DataConnector id="staticAttributes" xsi:type="Static">
         <Attribute id="affiliation">
             <Value>member</Value>
         </Attribute>
     </DataConnector>
 -->
 
-<DataConnector id="myLDAP" xsi:type="LDAPDirectory"
+    <DataConnector id="myLDAP" xsi:type="LDAPDirectory"
         ldapURL="%{idp.attribute.resolver.LDAP.ldapURL}"
         baseDN="%{idp.attribute.resolver.LDAP.baseDN}" 
         principal="%{idp.attribute.resolver.LDAP.bindDN}"
@@ -155,5 +155,6 @@
                 %{idp.attribute.resolver.LDAP.searchFilter}
             ]]>
         </FilterTemplate>
-</DataConnector>
+    </DataConnector>
+
 </AttributeResolver>
