@@ -9,6 +9,7 @@ ArcGIS Online/ArcGIS Enterprise は SAML 2.0 に準拠しており、この規�
   - [Shibboleth](https://github.com/EsriJapan/arcgis-saml-samples/tree/master/Shibboleth) には、連携に利用する SAML の各設定ファイルを公開しています。ArcGIS Online/ArcGIS Enterprise と Shibboleth の連携手順については、「[ArcGIS Online/ArcGIS Enterprise - Shibboleth 連携ガイド](https://www.esrij.com/cgi-bin/wp/wp-content/uploads/documents/ArcGIS_Online_ArcGIS_Enterprise_Shibboleth_IntegrationGuide.pdf)」をご参照ください。
 
 ## ライセンス
+
 Copyright 2020 Esri Japan Corporation.
 
 Apache License Version 2.0（「本ライセンス」）に基づいてライセンスされます。あなたがこのファイルを使用するためには、本ライセンスに従わなければなりません。
