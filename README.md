@@ -1,12 +1,16 @@
 ## SAML (Security Assertion Markup Language) 2.0 
 
-ArcGIS Online/ArcGIS Enterprise は、エンタープライズ ログインのアカウント構成に SAML (Security Assertion Markup Language) 2.0 をサポートしています。SAML は、認証サーバーである ID プロバイダーとサービスを提供するアプリケーションであるサービス プロバイダーとの間で認証/認可データを安全に交換するためのオープン規格です。
+ArcGIS Online / ArcGIS Enterprise は、エンタープライズ ログインのアカウント構成に SAML (Security Assertion Markup Language) 2.0 をサポートしています。SAML は、認証サーバーである ID プロバイダーとサービスを提供するアプリケーションであるサービス プロバイダーとの間で認証/認可データを安全に交換するためのオープン規格です。
 
-ArcGIS Online/ArcGIS Enterprise は SAML 2.0 に準拠しており、この規格に準拠する ID プロバイダー (Idp) と統合することができます。
+ArcGIS Online / ArcGIS Enterprise は SAML 2.0 に準拠しており、この規格に準拠する ID プロバイダー (Idp) と統合することができます。
 
 - Shibboleth
-  - Shibboleth 3.2x および 3.3x は SAML 2.0 に準拠しているので、Idp として ArcGIS Online/ArcGIS Enterprise で使用することができます。
-  - [Shibboleth](https://github.com/EsriJapan/arcgis-saml-samples/tree/master/Shibboleth) には、連携に利用する SAML の各設定ファイルを公開しています。ArcGIS Online/ArcGIS Enterprise と Shibboleth の連携手順については、「[ArcGIS Online/ArcGIS Enterprise - Shibboleth 連携ガイド](https://www.esrij.com/cgi-bin/wp/wp-content/uploads/documents/ArcGIS_Online_ArcGIS_Enterprise_Shibboleth_IntegrationGuide.pdf)」をご参照ください。
+  - Shibboleth 3.2x および 3.3x は SAML 2.0 に準拠しているので、Idp として ArcGIS Online / ArcGIS Enterprise で使用することができます。
+  - [Shibboleth](/Shibboleth) には、連携に利用する SAML の各設定ファイルを公開しています。ArcGIS Online / ArcGIS Enterprise と Shibboleth の連携手順については、「[ArcGIS Online/ArcGIS Enterprise - Shibboleth 連携ガイド](/Shibboleth/Shibboleth_SetupGuide.md)」をご参照ください。
+
+- Active Directory Federation Service (ADFS)
+  - Active Directory Federation Service (ADFS) は SAML 2.0 に準拠しているので、Idp として ArcGIS Online / ArcGIS Enterprise で使用することができます。
+  - ArcGIS Online / ArcGIS Enterprise と Active Directory Federation Service (ADFS) の連携手順については、「[ArcGIS Online/ArcGIS Enterprise - Active Directory Federation Service 連携ガイド](/ADFS/ADFS_SetupGuide.md)」をご参照ください。
 
 ## ライセンス
 
